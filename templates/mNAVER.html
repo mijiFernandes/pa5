@@ -24,21 +24,6 @@
         border-radius: 50%;
         border: 0;
         outline: 0;
-        display: block;
-        @include middle($width, $height);
-        @include transition(all .15s ease-in-out);
-
-        &:hover{
-        background-color: $bg_hover;
-        @include text-shadow(0 -1px -1px darken($bg_hover, 7%));
-        @include box-shadow(
-          0 4px 0 darken($bg_hover, 7%),
-          0 5px 5px 1px $bg_shadow);
-        }
-        &:active {
-        margin-top: (-$height)/2 + 4;
-        @include box-shadow(none);
-        }
         }
 
         .gradient-wrapper { padding: 15px; border-radius: 50%; display: inline-block;
@@ -49,19 +34,6 @@
         background: linear-gradient(#26FFB8, #1BF80F);
         }
 
-        @import "compass/css3";
-
-        $font_size: 22px;
-        $width: 124px;
-        $height: 44px;
-        $bg: #CC4331;
-        $bg_hover: lighten($bg, 5%);
-        $txt_color: white;
-        $bg_shadow: rgba(0,0,0,0.4);
-
-        .button {
-
-        }
     </style>
 </head>
 <body class="on_animation">
